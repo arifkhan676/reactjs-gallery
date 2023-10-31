@@ -1,6 +1,7 @@
 import React from "react";
 import ImageCard from "../Card/ImageCard";
 import "./gallery.css";
+import { Images } from "../ImageData/Images";
 
 const Gallery = () => {
   return (
@@ -9,7 +10,9 @@ const Gallery = () => {
         <h3> Gallery </h3>
       </div>
       <div className="gallery">
-        <ImageCard />
+        {Images.map((item) => {
+          return <ImageCard image={item.src} />;
+        })}
       </div>
     </div>
   );
