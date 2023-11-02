@@ -8,6 +8,7 @@ const Gallery = () => {
     <div className="container-gallery">
       <div className="header">
         <h3> Gallery </h3>
+        <p> {} Files </p>
       </div>
       <div className="gallery">
         {Images.map((item) => {
